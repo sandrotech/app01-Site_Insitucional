@@ -5,24 +5,23 @@
 ######################
 FROM node:24-bookworm-slim AS builder
 
-# Diretório de trabalho
 WORKDIR /app
-
-# Variáveis de ambiente
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
-# Copiar manifestos e instalar dependências
+# Copiar manifestos
 COPY package*.json ./
-RUN npm ci
 
-# Copiar o restante do código do projeto
+# 🔧 Instalar dependências (npm ci às vezes falha com Rollup no Docker)
+RUN npm install
+
+# Copiar código-fonte
 COPY . .
 
-# ✅ Corrigir permissões do binário do Vite (recursivamente)
-RUN chmod -R +x node_modules/.bin
+# ✅ Garantir permissão de execução e reconstruir Rollup
+RUN chmod -R +x node_modules/.bin && npm rebuild rollup --force
 
-# Executar build do projeto Vite
+# Build do projeto
 RUN npm run build
 
 
@@ -38,11 +37,9 @@ ENV PORT=3000
 # Instalar servidor estático leve
 RUN npm install -g serve
 
-# Copiar apenas a pasta final de build
+# Copiar build final
 COPY --from=builder /app/dist ./dist
 
-# Porta dinâmica (padrão 3000)
 EXPOSE ${PORT}
 
-# Rodar o servidor estático
 CMD ["sh", "-c", "serve -s dist -l ${PORT}"]
