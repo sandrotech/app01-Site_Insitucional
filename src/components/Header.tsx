@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -57,7 +57,7 @@ export function Header() {
               onClick={() => scrollToSection("servicos")}
               className="text-[#1C2333] hover:text-[#0B2559] transition-colors duration-150"
             >
-              Serviços
+              ServiÃ§os
             </button>
             <button
               onClick={() => scrollToSection("contato")}
@@ -101,7 +101,7 @@ export function Header() {
                 onClick={() => scrollToSection("servicos")}
                 className="text-[#1C2333] hover:text-[#0B2559] text-left py-2 transition-colors duration-150"
               >
-                Serviços
+                ServiÃ§os
               </button>
               <button
                 onClick={() => scrollToSection("contato")}

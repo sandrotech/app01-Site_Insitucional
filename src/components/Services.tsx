@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+﻿import { Card } from "./ui/card";
 import { ArrowRight, GitBranch, Zap, Calendar, DollarSign, BarChart3, Users } from "lucide-react";
 
 export function Services() {
@@ -20,32 +20,32 @@ export function Services() {
     {
       icon: GitBranch,
       title: "Mapeamento de Processos (BPMN)",
-      description: "Documentação e análise detalhada dos processos da sua empresa para identificar gargalos e oportunidades de melhoria."
+      description: "DocumentaÃ§Ã£o e anÃ¡lise detalhada dos processos da sua empresa para identificar gargalos e oportunidades de melhoria."
     },
     {
       icon: Zap,
-      title: "Otimização Operacional (Lean/Kaizen)",
-      description: "Implementação de metodologias ágeis para eliminar desperdícios, aumentar produtividade e melhorar fluxos de trabalho."
+      title: "OtimizaÃ§Ã£o Operacional (Lean/Kaizen)",
+      description: "ImplementaÃ§Ã£o de metodologias Ã¡geis para eliminar desperdÃ­cios, aumentar produtividade e melhorar fluxos de trabalho."
     },
     {
       icon: Calendar,
-      title: "PCP – Planejamento e Controle da Produção",
-      description: "Gestão estratégica da capacidade produtiva, programação de produção e controle de estoques para máxima eficiência."
+      title: "PCP â€“ Planejamento e Controle da ProduÃ§Ã£o",
+      description: "GestÃ£o estratÃ©gica da capacidade produtiva, programaÃ§Ã£o de produÃ§Ã£o e controle de estoques para mÃ¡xima eficiÃªncia."
     },
     {
       icon: DollarSign,
-      title: "Custos e Orçamentos",
-      description: "Análise profunda de estrutura de custos, formação de preços e elaboração de orçamentos para decisões mais assertivas."
+      title: "Custos e OrÃ§amentos",
+      description: "AnÃ¡lise profunda de estrutura de custos, formaÃ§Ã£o de preÃ§os e elaboraÃ§Ã£o de orÃ§amentos para decisÃµes mais assertivas."
     },
     {
       icon: BarChart3,
       title: "Indicadores & Dashboards (BI)",
-      description: "Desenvolvimento de KPIs estratégicos e painéis interativos para monitoramento em tempo real do desempenho da operação."
+      description: "Desenvolvimento de KPIs estratÃ©gicos e painÃ©is interativos para monitoramento em tempo real do desempenho da operaÃ§Ã£o."
     },
     {
       icon: Users,
       title: "Treinamentos In-Company",
-      description: "Capacitação customizada para suas equipes em ferramentas e metodologias de engenharia de produção e melhoria contínua."
+      description: "CapacitaÃ§Ã£o customizada para suas equipes em ferramentas e metodologias de engenharia de produÃ§Ã£o e melhoria contÃ­nua."
     }
   ];
 
@@ -54,10 +54,10 @@ export function Services() {
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-[#0B2559] mb-6" style={{ fontSize: '2.25rem', fontWeight: 700 }}>
-            Serviços oferecidos
+            ServiÃ§os oferecidos
           </h2>
           <p className="text-[#1C2333]/80" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
-            Soluções completas em engenharia de produção para transformar sua operação
+            SoluÃ§Ãµes completas em engenharia de produÃ§Ã£o para transformar sua operaÃ§Ã£o
           </p>
         </div>
 

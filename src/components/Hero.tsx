@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+﻿import { Button } from "./ui/button";
 import { ArrowRight, Target } from "lucide-react";
 
 export function Hero() {
@@ -23,10 +23,10 @@ export function Hero() {
           {/* Content */}
           <div className="space-y-6 md:space-y-8">
             <h1 className="text-[#0B2559]" style={{ fontSize: '2.5rem', lineHeight: '1.2', fontWeight: 700 }}>
-              Consultoria em Engenharia de Produção focada em eficiência e resultados.
+              Consultoria em Engenharia de ProduÃ§Ã£o focada em eficiÃªncia e resultados.
             </h1>
             <p className="text-[#1C2333]/80" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
-              Ajudamos empresas a otimizar processos, reduzir custos e escalar operações.
+              Ajudamos empresas a otimizar processos, reduzir custos e escalar operaÃ§Ãµes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -34,7 +34,7 @@ export function Hero() {
                 className="bg-[#0B2559] hover:bg-[#0B2559]/90 text-white px-8 py-6 rounded-xl transition-all duration-150 shadow-lg hover:shadow-xl"
                 style={{ fontSize: '1.0625rem' }}
               >
-                Solicitar diagnóstico
+                Solicitar diagnÃ³stico
                 <ArrowRight className="ml-2" size={20} />
               </Button>
               <Button
@@ -43,7 +43,7 @@ export function Hero() {
                 className="border-2 border-[#1F7A8C] text-[#1F7A8C] hover:bg-[#1F7A8C] hover:text-white px-8 py-6 rounded-xl transition-all duration-150"
                 style={{ fontSize: '1.0625rem' }}
               >
-                Conheça nossos serviços
+                ConheÃ§a nossos serviÃ§os
               </Button>
             </div>
           </div>

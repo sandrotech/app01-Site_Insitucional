@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -6,8 +6,8 @@ import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Card } from "./ui/card";
-import { Mail, Phone, MapPin, MessageSquare, CheckCircle2, AlertCircle, Instagram, Linkedin } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { Mail, Phone, MapPin, MessageSquare, CheckCircle, AlertCircle, Instagram, Linkedin } from "lucide-react";
+import { toast } from "sonner";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -27,7 +27,7 @@ export function Contact() {
     e.preventDefault();
     
     if (!formData.acceptPrivacy) {
-      toast.error("Por favor, aceite a Política de Privacidade para continuar.");
+      toast.error("Por favor, aceite a PolÃ­tica de Privacidade para continuar.");
       return;
     }
 
@@ -96,7 +96,7 @@ export function Contact() {
             Vamos conversar?
           </h2>
           <p className="text-[#1C2333]/80" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
-            Entre em contato conosco e descubra como podemos ajudar sua empresa a alcançar novos patamares de eficiência
+            Entre em contato conosco e descubra como podemos ajudar sua empresa a alcanÃ§ar novos patamares de eficiÃªncia
           </p>
         </div>
 
@@ -167,11 +167,11 @@ export function Contact() {
                     <SelectValue placeholder="Selecione um assunto" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="diagnostico">Solicitar diagnóstico</SelectItem>
+                    <SelectItem value="diagnostico">Solicitar diagnÃ³stico</SelectItem>
                     <SelectItem value="processos">Mapeamento de Processos</SelectItem>
-                    <SelectItem value="otimizacao">Otimização Operacional</SelectItem>
+                    <SelectItem value="otimizacao">OtimizaÃ§Ã£o Operacional</SelectItem>
                     <SelectItem value="pcp">PCP</SelectItem>
-                    <SelectItem value="custos">Custos e Orçamentos</SelectItem>
+                    <SelectItem value="custos">Custos e OrÃ§amentos</SelectItem>
                     <SelectItem value="bi">Indicadores & BI</SelectItem>
                     <SelectItem value="treinamento">Treinamentos</SelectItem>
                     <SelectItem value="outro">Outro assunto</SelectItem>
@@ -203,7 +203,7 @@ export function Contact() {
                 <Label htmlFor="privacy" className="cursor-pointer leading-relaxed" style={{ fontWeight: 400 }}>
                   Li e aceito a{" "}
                   <a href="#" className="text-[#1F7A8C] hover:text-[#00BFA6] underline transition-colors">
-                    Política de Privacidade
+                    PolÃ­tica de Privacidade
                   </a>
                 </Label>
               </div>
@@ -226,7 +226,7 @@ export function Contact() {
                   </span>
                 ) : submitStatus === "success" ? (
                   <span className="flex items-center gap-2">
-                    <CheckCircle2 size={20} />
+                    <CheckCircle size={20} />
                     Mensagem enviada!
                   </span>
                 ) : submitStatus === "error" ? (
@@ -246,7 +246,7 @@ export function Contact() {
             {/* Quick Actions */}
             <div>
               <h3 className="text-[#0B2559] mb-6" style={{ fontSize: '1.25rem', fontWeight: 600 }}>
-                Ações rápidas
+                AÃ§Ãµes rÃ¡pidas
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {quickActions.map((action, index) => {
@@ -282,13 +282,13 @@ export function Contact() {
             {/* Address */}
             <Card className="p-6 border-[#E6EAF0] bg-[#F5F7FA]/50">
               <h3 className="text-[#0B2559] mb-4" style={{ fontSize: '1.25rem', fontWeight: 600 }}>
-                Endereço
+                EndereÃ§o
               </h3>
               <div className="flex items-start gap-3 mb-6">
                 <MapPin size={20} className="text-[#1F7A8C] flex-shrink-0 mt-1" />
                 <div className="text-[#1C2333]/80">
                   <p>Av. Paulista, 1000 - Conj. 1405</p>
-                  <p>Bela Vista, São Paulo - SP</p>
+                  <p>Bela Vista, SÃ£o Paulo - SP</p>
                   <p>CEP 01310-100</p>
                 </div>
               </div>

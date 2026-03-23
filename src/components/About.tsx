@@ -1,17 +1,17 @@
-import { Card } from "./ui/card";
-import { Award, Shield, TrendingUp, Users, CheckCircle2, Briefcase } from "lucide-react";
+﻿import { Card } from "./ui/card";
+import { Award, Shield, TrendingUp, Users, CheckCircle, Briefcase } from "lucide-react";
 
 export function About() {
   const metrics = [
-    { icon: Users, value: "10+", label: "anos de experiência" },
+    { icon: Users, value: "10+", label: "anos de experiÃªncia" },
     { icon: Briefcase, value: "120+", label: "projetos entregues" },
-    { icon: Award, value: "98%", label: "satisfação dos clientes" }
+    { icon: Award, value: "98%", label: "satisfaÃ§Ã£o dos clientes" }
   ];
 
   const values = [
-    { icon: Award, title: "Excelência", description: "Compromisso com a qualidade em cada projeto" },
-    { icon: Shield, title: "Ética", description: "Transparência e integridade em todas as relações" },
-    { icon: TrendingUp, title: "Foco em Resultados", description: "Orientação para entrega de valor mensurável" }
+    { icon: Award, title: "ExcelÃªncia", description: "Compromisso com a qualidade em cada projeto" },
+    { icon: Shield, title: "Ã‰tica", description: "TransparÃªncia e integridade em todas as relaÃ§Ãµes" },
+    { icon: TrendingUp, title: "Foco em Resultados", description: "OrientaÃ§Ã£o para entrega de valor mensurÃ¡vel" }
   ];
 
   return (
@@ -22,7 +22,7 @@ export function About() {
             Sobre a Focus
           </h2>
           <p className="text-[#1C2333]/80" style={{ fontSize: '1.125rem', lineHeight: '1.7' }}>
-            Somos especialistas em transformar desafios operacionais em oportunidades de crescimento. Nossa abordagem combina metodologia técnica, análise de dados e foco em resultados práticos para entregar soluções que realmente fazem a diferença no dia a dia das empresas.
+            Somos especialistas em transformar desafios operacionais em oportunidades de crescimento. Nossa abordagem combina metodologia tÃ©cnica, anÃ¡lise de dados e foco em resultados prÃ¡ticos para entregar soluÃ§Ãµes que realmente fazem a diferenÃ§a no dia a dia das empresas.
           </p>
         </div>
 

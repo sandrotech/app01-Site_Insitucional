@@ -1,4 +1,4 @@
-export function Footer() {
+﻿export function Footer() {
   return (
     <footer className="bg-[#0B2559] text-white py-12">
       <div className="max-w-[1200px] mx-auto px-6">
@@ -14,7 +14,7 @@ export function Footer() {
           {/* Copyright & Info */}
           <div className="text-center md:text-right">
             <p className="text-white/80 mb-1">
-              © {new Date().getFullYear()} Focus Consultoria em Engenharia de Produção. Todos os direitos reservados.
+              Â© {new Date().getFullYear()} Focus Consultoria em Engenharia de ProduÃ§Ã£o. Todos os direitos reservados.
             </p>
             <p className="text-white/60" style={{ fontSize: '0.875rem' }}>
               CNPJ: 00.000.000/0000-00
@@ -29,7 +29,7 @@ export function Footer() {
             className="text-white/60 hover:text-[#00BFA6] transition-colors duration-150"
             style={{ fontSize: '0.875rem' }}
           >
-            Política de Privacidade
+            PolÃ­tica de Privacidade
           </a>
           <a
             href="#"
